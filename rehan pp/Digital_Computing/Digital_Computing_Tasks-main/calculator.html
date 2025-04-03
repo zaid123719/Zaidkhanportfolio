@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator - Zaid Khan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .calc-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        header {
+            width: 100%;
+        }
+        
+        header a {
+            text-decoration: none;
+            color: white;
+            margin-left: 10px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        header a:hover {
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h4>Zaid Khan</h4>
+        <h4>Scientific Calculator <a href="index.html">← Back to Projects</a></h4>
+    </header>
+
+    <div class="calc-container">
+        <div class="calculator">
+            <div class="display" id="display">0</div>
+            <div class="buttons">
+                <!-- Number and Basic Operations -->
+                <button class="btn" data-value="7">7</button>
+                <button class="btn" data-value="8">8</button>
+                <button class="btn" data-value="9">9</button>
+                <button class="btn operator" data-value="/">÷</button>
+
+                <button class="btn" data-value="4">4</button>
+                <button class="btn" data-value="5">5</button>
+                <button class="btn" data-value="6">6</button>
+                <button class="btn operator" data-value="*">×</button>
+
+                <button class="btn" data-value="1">1</button>
+                <button class="btn" data-value="2">2</button>
+                <button class="btn" data-value="3">3</button>
+                <button class="btn operator" data-value="-">−</button>
+
+                <button class="btn" data-value="0">0</button>
+                <button class="btn" data-value=".">.</button>
+                <button class="btn clear" id="clear">C</button>
+                <button class="btn operator" data-value="+">+</button>
+
+                <!-- Advanced Functions -->
+                <button class="btn" data-value="sin">sin</button>
+                <button class="btn" data-value="cos">cos</button>
+                <button class="btn" data-value="tan">tan</button>
+                
+                <button class="btn equal" id="equal">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

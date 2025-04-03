@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Login Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #fafafa;
+    }
+    .container {
+      width: 350px;
+      padding: 40px 30px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .container:hover {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+    .container img {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    .input-group input {
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .input-group input:focus {
+      outline: none;
+      border-color: #007bff;
+    }
+    .login-btn {
+      background-color: #0095f6;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+    .login-btn:hover {
+      background-color: #007bb5;
+    }
+    .forgot-password,
+    .sign-up {
+      font-size: 14px;
+      color: #007bff;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    .forgot-password:hover,
+    .sign-up:hover {
+      text-decoration: underline;
+    }
+    .separator {
+      margin: 20px 0;
+      position: relative;
+      text-align: center;
+    }
+    .separator span {
+      padding: 0 10px;
+      background-color: #fff;
+      color: gray;
+    }
+    .separator::before,
+    .separator::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+      background-color: #ddd;
+      transform: translateY(-50%);
+    }
+    .separator::before {
+      left: 0;
+    }
+    .separator::after {
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Instagram Logo from the internet -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" />
+    <form action="" method="POST">
+      <div class="input-group">
+        <input type="email" placeholder="Phone number, username, or email" required />
+        <input type="password" placeholder="Password" required />
+      </div>
+      <button type="submit" class="login-btn">Log In</button>
+    </form>
+    <div class="separator">
+      <span>OR</span>
+    </div>
+    <a href="#" class="forgot-password">Forgot password?</a>
+    <div class="sign-up">
+      <p>Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+  </div>
+</body>
+</html>
